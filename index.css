@@ -40,9 +40,14 @@ section {
 
 }
 #GitHubDiv{
-	width: 200px;
+	width: 360px;
     height: 120px;
     padding-top: 100px;
+}
+#MailImg{
+	width: 150px;
+    height: 121px;
+    vertical-align: inherit;
 }
 
 
