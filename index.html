@@ -3,11 +3,29 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Iker Obregon Reigosa</title>
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> <!--  -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="index.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1"><!-- Set the initial scale for responsive  -->
+
+	  <script type="text/javascript">
+     function visibleHidden($button){ //
+        $invisibleDiv = $button.parent().find('.hiddenDiv');
+        if ($invisibleDiv.css('display') == 'none') { // When invisible make it visible
+          $invisibleDiv.show(1000);
+        }else{ // When visible make it hidden
+          $invisibleDiv.hide(1000);
+        } 
+      }
+
+      $(document).ready(function(){
+         $('.buttonHidden').click(function(){ // Adds listeners to all the buttons in buttonHidden Class
+          visibleHidden($(this));
+        });
+      });
+  </script>
+
 </head>
 <body>
 	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -36,7 +54,7 @@
 	    </div><!-- /.navbar-collapse -->
 	  </div><!-- /.container-fluid -->
 </nav>
-	<div class="bs-docs-section container-fluid" >
+	<div class="bs-docs-section container-fluid" > <!--Principal container  -->
 
 		<section id="bio">
 			<h1 class="page-header" >Biography</h1>
@@ -51,30 +69,35 @@
 		</section>
 		<section id="edu">
 			<h1 class="page-header">Education and Training</h1>
-			<div id="edu-container container-fluid" >
-				<div class="edu-inside container-fluid">
-					<h3> Advanced Computer Applications Development Degree: </h3>
-					<ul class="list-unstyled">
-						<li> C.F. Muskiz.  </li>
-						<li> 2007 - 2009 </li>
-						<li> Desktop applications development and understanding of its environment (Networking and Operating System). </li>
-					</ul>
+			<div id="edu-container container-fluid" > <!-- Container to display in 2 blocks -->
+				<div class="edu-inside container-fluid"><!-- Inside container 1 -->
+					<button class="buttonHidden btn btn-default  btn-lg  dropdown-toggle" data-toggle="dropdown" >Advanced Computer Applications Development Degree  | <span class="caret"></span> </button> 
+					<div class="hiddenDiv" hidden >
+						<ul class="list-unstyled">
+							<li> C.F. Muskiz.  </li>
+							<li> 2007 - 2009 </li>
+							<li> Desktop applications development and understanding of its environment (Networking and Operating System). </li>
+						</ul>
+					</div>
 				</div>
-				<div class="edu-inside container-fluid">
-					<h3> Bachelor of Science (Honours) Degree in Computing </h3>
-					<ul class="list-unstyled">
-					<li> University of Wales, Cardiff (Spain). </li>
-					<li> 2009 - 2012 </li>
-					<li>Object Oriented Programming, Client-Server application development, Databases, Computer Networks, Advanced computer systems, Unix-based computer systems, Real-time systems</li>
-					</ul>
 
+				<div class="edu-inside container-fluid"> <!-- Inside container 2 -->
+					<button class="buttonHidden btn btn-default  btn-lg  dropdown-toggle" data-toggle="dropdown" >Bachelor of Science (Honours) Degree in Computing  | <span class="caret"></span> </button> 
+					<div class="hiddenDiv" hidden >
+						<ul class="list-unstyled">
+						<li> University of Wales, Cardiff (Spain). </li>
+						<li> 2009 - 2012 </li>
+						<li>Object Oriented Programming, Client-Server application development, Databases, Computer Networks, Advanced computer systems, Unix-based computer systems, Real-time systems</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</section>
 
 		<section id="work" class="clearfix">
+			<div>
 			<h1 class="page-header">Work Experience</h1>
-			
+			</div>
 		</section>
 		<section id="contact">
 			<h1 class="page-header">Contact</h1>

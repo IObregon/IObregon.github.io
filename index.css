@@ -22,14 +22,19 @@ section {
 	float:left;
 }
 
-#edu-container{
+#afterFloat{
+	width: 100%;
+	float:none;
+}
 
+#edu-container{
 	overflow: hidden;	
 }
 
 
 @media only screen and (max-device-width: 600px) {
 	.edu-inside {
+		width: 80%;
 		float: none;
 	}
 
