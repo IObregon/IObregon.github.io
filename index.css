@@ -28,7 +28,7 @@ section {
 	overflow: hidden;	
 }
 
-#contact-ul{
+.contact-container{
 	display: inline;
 	padding-right: 20px;
 	text-align: left;
