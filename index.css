@@ -22,11 +22,6 @@ section {
 	float:left;
 }
 
-#afterFloat{
-	width: 100%;
-	float:none;
-}
-
 #edu-container{
 	overflow: hidden;	
 }
