@@ -36,6 +36,7 @@ section {
 #GitHubImg{
 	width: 360px;
     height: 121px;
+    vertical-align: none;
 
 }
 #GitHubDiv{
