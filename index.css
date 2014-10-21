@@ -36,10 +36,13 @@ section {
 #GitHubImg{
 	width: 360px;
     height: auto;
+
 }
 #GitHubDiv{
 	width: 200px;
     height: 120px;
+    padding-top: 100px;
+    vertical-align: top;
 }
 
 
